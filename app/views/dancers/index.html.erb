@@ -1,1 +1,9 @@
-<h1>This is where the dancers come together!</h1>
+<% @dancers.each do |dancer| %>
+  <div>
+    <h1><%= dancer.name %></h1><br />
+    <i><%= dancer.bio %></i><br />
+    <p><%= dancer.style %></p><br />
+  </div>
+
+  <hr />
+<% end %>
