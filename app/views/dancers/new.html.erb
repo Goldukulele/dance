@@ -1,0 +1,10 @@
+<div class="boxing col-10 offset-1">
+  <h1>Enter new Dancer's info</h1>
+  <%= simple_form_for @dancer do |f| %>
+    <%= f.input :name %>
+    <%= f.input :bio %>
+    <%= f.input :style %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>

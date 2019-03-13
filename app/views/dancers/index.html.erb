@@ -1,9 +1,7 @@
 <% @dancers.each do |dancer| %>
-  <div>
-    <h1><%= dancer.name %></h1><br />
-    <i><%= dancer.bio %></i><br />
-    <p><%= dancer.style %></p><br />
+  <div class="boxing col-10 offset-1">
+    <h1><%= dancer.name %></h1>
+    <i><%= dancer.bio %></i><br /><br />
+    <p>-Dance Style: <%= dancer.style %></p><br />
   </div>
-
-  <hr />
 <% end %>
